@@ -1,0 +1,43 @@
+.login-form{
+    background-color: #ffffff;
+    margin: 50px auto;
+    padding: 10px 0 20px 0;
+    width: 500px;
+}
+
+.login-title{
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+}
+
+.form-input{
+    display: block;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pwd-info{
+    width: 400px;
+    margin: 20px auto;
+}
+.pwd-info a{
+    display: inline-block;
+    float: right;
+}
+
+.login-btn{
+    display: block;
+    width: 400px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 auto;
+    background-color: #4eaa4c;
+    color: #ffffff;
+    font-size: 24px;
+}
