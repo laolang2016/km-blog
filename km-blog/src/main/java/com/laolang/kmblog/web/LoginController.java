@@ -48,4 +48,16 @@ public class LoginController {
 
         return page;
     }
+
+    @RequestMapping(value = "logout",method = RequestMethod.GET)
+    public String logout( HttpSession session){
+        String page = "redirect:/index";
+        UserBase userBase = (UserBase) session.getAttribute("userBase");
+        if( null != userBase ){
+            session.removeAttribute("userBase");
+        }else{
+            page = "redirect:/login";
+        }
+        return page;
+    }
 }
