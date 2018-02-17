@@ -4,8 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <import resource="classpath:spring/spring-public.xml" />
-    <import resource="classpath:spring/spring-mvc.xml" />
-    <import resource="classpath:spring/spring-mybatis.xml" />
-    <import resource="classpath:spring/spring-transaction.xml" />
+    <import resource="classpath:spring/spring-public-test.xml" />
+    <!--<import resource="classpath:spring/spring-mvc-test.xml" />-->
+    <import resource="classpath:spring/spring-mybatis-test.xml" />
+    <import resource="classpath:spring/spring-transaction-test.xml" />
 </beans>
