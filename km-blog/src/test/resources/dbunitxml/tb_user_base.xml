@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dataset>
+    <!-- tb_user_base -->
+    <tb_user_base id="1" user_code="u1" nick_name="xiaodaima1" pwd="123456" phone="13569091001" email="xiaodaima1@163.com"
+             blog_url="http://www.kmblog.com/u/u1/blog" sex="1" head_pic="head_pic" birthday="1991-12-06" comment_report="1"
+             weekly_report="1" created="2018-02-17 12:14:20" updated="2018-02-17 12:14:20" />
+
+    <tb_user_base id="2" user_code="u2" nick_name="xiaodaima2" pwd="123456" phone="13569091002" email="xiaodaima2@163.com"
+             blog_url="http://www.kmblog.com/u/u2/blog" sex="2" head_pic="head_pic" birthday="1991-12-06" comment_report="1"
+             weekly_report="1" created="2018-02-17 12:14:20" updated="2018-02-17 12:14:20" />
+
+    <tb_user_base id="3" user_code="u3" nick_name="xiaodaima3" pwd="123456" phone="13569091003" email="xiaodaima3@163.com"
+             blog_url="http://www.kmblog.com/u/u3/blog" sex="1" head_pic="head_pic" birthday="1991-12-06" comment_report="1"
+             weekly_report="1" created="2018-02-17 12:14:20" updated="2018-02-17 12:14:20" />
+
+    <tb_user_base id="4" user_code="u4" nick_name="xiaodaima4" pwd="123456" phone="13569091004" email="xiaodaima4@163.com"
+             blog_url="http://www.kmblog.com/u/u4/blog" sex="1" head_pic="head_pic" birthday="1991-12-06" comment_report="1"
+             weekly_report="1" created="2018-02-17 12:14:20" updated="2018-02-17 12:14:20" />
+
+    <tb_user_base id="5" user_code="u5" nick_name="xiaodaima5" pwd="123456" phone="13569091005" email="xiaodaima5@163.com"
+             blog_url="http://www.kmblog.com/u/u5/blog" sex="1" head_pic="head_pic" birthday="1991-12-06" comment_report="1"
+             weekly_report="1" created="2018-02-17 12:14:20" updated="2018-02-17 12:14:20" />
+
+    <tb_user_base id="6" user_code="u6" nick_name="xiaodaima6" pwd="123456" phone="13569091006" email="xiaodaima6@163.com"
+             blog_url="http://www.kmblog.com/u/u6/blog" sex="1" head_pic="head_pic" birthday="1991-12-06" comment_report="1"
+             weekly_report="1" created="2018-02-17 12:14:20" updated="2018-02-17 12:14:20" />
+
+    <tb_user_base id="7" user_code="u7" nick_name="xiaodaima7" pwd="123456" phone="13569091007" email="xiaodaima7@163.com"
+             blog_url="http://www.kmblog.com/u/u7/blog" sex="1" head_pic="head_pic" birthday="1991-12-06" comment_report="1"
+             weekly_report="1" created="2018-02-17 12:14:20" updated="2018-02-17 12:14:20" />
+</dataset>
