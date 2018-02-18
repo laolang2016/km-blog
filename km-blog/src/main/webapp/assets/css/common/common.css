@@ -83,3 +83,14 @@ body{background-color: #f5f5f5;}
     display: block;
     text-align: center;
 }
+
+.head-pic-50{
+    display: block;
+    float: left;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.link-default{
+    color: #4eaa4c !important;
+}

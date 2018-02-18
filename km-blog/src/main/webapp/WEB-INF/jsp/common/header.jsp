@@ -9,7 +9,7 @@
                 <ul>
                     <li>小代码2016，您好</li>
                     <li class="drop-menu">
-                        <a href="#">我的空间</a>
+                        <a href="<%=basePath%>/u/${sessionScope.userBase.blogUrl}/admin">我的空间</a>
                         <ul>
                             <li><a href="#">我的私信</a></li>
                             <li><a href="#">我的博客</a></li>

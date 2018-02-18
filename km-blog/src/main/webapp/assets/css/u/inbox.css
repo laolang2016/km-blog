@@ -1,0 +1,111 @@
+.inbox-search-box{
+    margin: 20px 0;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.inbox-search{
+    float: left;
+}
+
+.inbox-search form{
+    display: inline-block;
+}
+
+.inbox-search span{
+    display: inline-block;
+    line-height: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.inbox-search-input{
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.inbox-op{
+    float: right;
+}
+
+.inbox-item{
+    overflow: hidden;
+    border-bottom: 1px solid #cccccc;
+    padding: 20px 0;
+}
+
+.inbox-item > img{
+    display: inline-block;
+    float: left;
+}
+
+.inbox-detail{
+    float: right;
+    width: 730px;
+}
+
+.inbox-detail > p{
+    display: inline;
+    line-height: 25px;
+}
+
+.inbox-detail-info{
+    margin: 10px 0;
+}
+
+.inbox-time{
+    display: inline-block;
+    float: left;
+}
+
+.inbox-detail-op{
+    display: inline-block;
+    float: right;
+}
+
+.inbox-send-box > span{
+    display: block;
+}
+
+.inbox-send-box > textarea{
+    resize: none;
+    width: 300px;
+    height: 150px;
+}
+
+.inbox-send-title{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.inbox-send-content{
+    resize: none;
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.inbox-reply-btn,
+.inbox-delete-btn,
+.inbox-forward-btn{
+    color: #000000;
+}
+
+.inbox-forward-box > form > label{
+    display: block;
+}
+
+.inbox-forward-box > form > label > textarea{
+    resize: none;
+    width: 300px;
+    height: 150px;
+}
+
+
+
+

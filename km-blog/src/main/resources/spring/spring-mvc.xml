@@ -16,4 +16,12 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
+    <mvc:interceptors>
+        <!-- 登录拦截 -->
+        <mvc:interceptor>
+            <mvc:mapping path="/u/**" />
+                <bean class="com.laolang.kmblog.inteceptor.LoginInteceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 </beans>
