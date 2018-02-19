@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/common/common.jsp"%>
 <html>
 <head>
-    <title>个人设置修改</title>
+    <title>个人设置修改 - ${sessionScope.userBase.nickName}的个人空间</title>
     <link type="text/css" rel="stylesheet" href="<%=basePath%>/assets/css/common/reset.css" />
     <link type="text/css" rel="stylesheet" href="<%=basePath%>/assets/css/common/common.css" />
 

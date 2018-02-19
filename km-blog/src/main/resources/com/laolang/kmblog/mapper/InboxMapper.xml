@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.laolang.kmblog.mapper.InboxMapper" >
+  <resultMap id="BaseResultMap" type="com.laolang.kmblog.domain.Inbox" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="user_from" property="userFrom" jdbcType="BIGINT" />
+    <result column="user_to" property="userTo" jdbcType="BIGINT" />
+    <result column="inbox_type" property="inboxType" jdbcType="INTEGER" />
+    <result column="created" property="created" jdbcType="TIMESTAMP" />
+    <result column="updated" property="updated" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.laolang.kmblog.domain.Inbox" extends="BaseResultMap" >
+    <result column="content" property="content" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, user_from, user_to, inbox_type, created, updated
+  </sql>
+  <sql id="Blob_Column_List" >
+    content
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_inbox
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from tb_inbox
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.laolang.kmblog.domain.Inbox" >
+    insert into tb_inbox (id, user_from, user_to, 
+      inbox_type, created, updated, 
+      content)
+    values (#{id,jdbcType=BIGINT}, #{userFrom,jdbcType=BIGINT}, #{userTo,jdbcType=BIGINT}, 
+      #{inboxType,jdbcType=INTEGER}, #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP}, 
+      #{content,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.laolang.kmblog.domain.Inbox" >
+    insert into tb_inbox
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="userFrom != null" >
+        user_from,
+      </if>
+      <if test="userTo != null" >
+        user_to,
+      </if>
+      <if test="inboxType != null" >
+        inbox_type,
+      </if>
+      <if test="created != null" >
+        created,
+      </if>
+      <if test="updated != null" >
+        updated,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userFrom != null" >
+        #{userFrom,jdbcType=BIGINT},
+      </if>
+      <if test="userTo != null" >
+        #{userTo,jdbcType=BIGINT},
+      </if>
+      <if test="inboxType != null" >
+        #{inboxType,jdbcType=INTEGER},
+      </if>
+      <if test="created != null" >
+        #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updated != null" >
+        #{updated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.laolang.kmblog.domain.Inbox" >
+    update tb_inbox
+    <set >
+      <if test="userFrom != null" >
+        user_from = #{userFrom,jdbcType=BIGINT},
+      </if>
+      <if test="userTo != null" >
+        user_to = #{userTo,jdbcType=BIGINT},
+      </if>
+      <if test="inboxType != null" >
+        inbox_type = #{inboxType,jdbcType=INTEGER},
+      </if>
+      <if test="created != null" >
+        created = #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updated != null" >
+        updated = #{updated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.laolang.kmblog.domain.Inbox" >
+    update tb_inbox
+    set user_from = #{userFrom,jdbcType=BIGINT},
+      user_to = #{userTo,jdbcType=BIGINT},
+      inbox_type = #{inboxType,jdbcType=INTEGER},
+      created = #{created,jdbcType=TIMESTAMP},
+      updated = #{updated,jdbcType=TIMESTAMP},
+      content = #{content,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.laolang.kmblog.domain.Inbox" >
+    update tb_inbox
+    set user_from = #{userFrom,jdbcType=BIGINT},
+      user_to = #{userTo,jdbcType=BIGINT},
+      inbox_type = #{inboxType,jdbcType=INTEGER},
+      created = #{created,jdbcType=TIMESTAMP},
+      updated = #{updated,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

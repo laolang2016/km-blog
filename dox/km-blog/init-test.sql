@@ -37,4 +37,36 @@ values(1006,'u1006','牛牛','123456','13500001006','niuniu@163.com','http://www
 insert into tb_user_base(id,user_code,nick_name,pwd,phone,email,blog_url,sex,head_pic,birthday,comment_report,weekly_report,created,updated) 
 values(1007,'u1007','十字','123456','13500001007','shizi@163.com','http://www.kmblog.com/u/shizi/blog',1,'head_pic','1991-12-06','1','1','2018-02-17 12:04:22','2018-02-17 12:04:22');
 
+create table tb_inbox(
+       id bigint(20) primary key auto_increment comment '私信id',
+       user_from bigint(20) not null comment '发信用户id，0表示由系统发送',
+       user_to bigint(20) not null comment '收信用户id',
+       content text not null comment '私信内容',
+       inbox_type int not null default 1 comment '私信类型，1：用户私信，2：系统私信',
+       created datetime not null comment '创建时间',
+       updated datetime not null comment '更新时间'    
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='私信表';
 
+insert into tb_inbox(id,user_from,user_to,content,inbox_type,created,updated)
+values(1,1,2,'私信测试 one',1,'2018-02-18 21:51:35','2018-02-18 21:51:35');
+
+insert into tb_inbox(id,user_from,user_to,content,inbox_type,created,updated)
+values(2,1,2,'私信测试 two',1,'2018-02-18 21:51:35','2018-02-18 21:51:35');
+
+insert into tb_inbox(id,user_from,user_to,content,inbox_type,created,updated)
+values(3,1,2,'私信测试 three',1,'2018-02-18 21:51:35','2018-02-18 21:51:35');
+
+insert into tb_inbox(id,user_from,user_to,content,inbox_type,created,updated)
+values(4,1,2,'私信测试 four',1,'2018-02-18 21:51:35','2018-02-18 21:51:35');
+
+insert into tb_inbox(id,user_from,user_to,content,inbox_type,created,updated)
+values(5,1,2,'私信测试 five',1,'2018-02-18 21:51:35','2018-02-18 21:51:35');
+
+insert into tb_inbox(id,user_from,user_to,content,inbox_type,created,updated)
+values(6,1,2,'私信测试 six',1,'2018-02-18 21:51:35','2018-02-18 21:51:35');
+
+insert into tb_inbox(id,user_from,user_to,content,inbox_type,created,updated)
+values(7,1,2,'私信测试 seven',1,'2018-02-18 21:51:35','2018-02-18 21:51:35');
+
+insert into tb_inbox(id,user_from,user_to,content,inbox_type,created,updated)
+values(8,1,2,'私信测试 eight',1,'2018-02-18 21:51:35','2018-02-18 21:51:35');

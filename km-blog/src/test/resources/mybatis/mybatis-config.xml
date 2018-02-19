@@ -30,6 +30,7 @@
 
     <typeHandlers>
         <typeHandler handler="com.laolang.kmblog.ext.mybatis.SexEnumHandler" javaType="com.laolang.kmblog.emuns.SexEnum"/>
+        <typeHandler handler="com.laolang.kmblog.ext.mybatis.InboxTypeEnumHandler" javaType="com.laolang.kmblog.emuns.InboxTypeEnum"/>
     </typeHandlers>
 
 

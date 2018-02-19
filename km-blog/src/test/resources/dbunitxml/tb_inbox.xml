@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dataset>
+    <!-- tb_user_base -->
+    <tb_user_base id="1" user_code="u1" nick_name="xiaodaima1" pwd="123456" phone="13569091001" email="xiaodaima1@163.com"
+                  blog_url="http://www.kmblog.com/u/u1/blog" sex="1" head_pic="head_pic" birthday="1991-12-06" comment_report="1"
+                  weekly_report="1" created="2018-02-17 12:14:20" updated="2018-02-17 12:14:20" />
+
+    <tb_user_base id="2" user_code="u2" nick_name="xiaodaima2" pwd="123456" phone="13569091002" email="xiaodaima2@163.com"
+                  blog_url="http://www.kmblog.com/u/u2/blog" sex="2" head_pic="head_pic" birthday="1991-12-06" comment_report="1"
+                  weekly_report="1" created="2018-02-17 12:14:20" updated="2018-02-17 12:14:20" />
+
+    <tb_user_base id="3" user_code="u3" nick_name="xiaodaima3" pwd="123456" phone="13569091003" email="xiaodaima3@163.com"
+                  blog_url="http://www.kmblog.com/u/u3/blog" sex="1" head_pic="head_pic" birthday="1991-12-06" comment_report="1"
+                  weekly_report="1" created="2018-02-17 12:14:20" updated="2018-02-17 12:14:20" />
+    <!-- tb_inbox -->
+    <tb_inbox id="1" user_from="2" user_to="3" content="私信测试 one" inbox_type="1"
+              created="2018-02-18 21:51:35" updated="2018-02-18 21:51:35" />
+    <tb_inbox id="2" user_from="2" user_to="3" content="私信测试 two" inbox_type="1"
+              created="2017-12-18 21:51:35" updated="2017-12-18 21:51:35" />
+    <tb_inbox id="3" user_from="1" user_to="3" content="私信测试 three" inbox_type="1"
+              created="2018-01-18 21:51:35" updated="2018-01-18 21:51:35" />
+    <tb_inbox id="4" user_from="2" user_to="3" content="私信测试 four" inbox_type="1"
+              created="2018-02-05 21:51:35" updated="2018-02-05 21:51:35" />
+    <tb_inbox id="5" user_from="3" user_to="3" content="私信测试 five" inbox_type="1"
+              created="2018-02-18 21:51:35" updated="2018-02-18 21:51:35" />
+    <tb_inbox id="6" user_from="2" user_to="3" content="私信测试 six" inbox_type="1"
+              created="2018-02-18 21:51:35" updated="2018-02-18 21:51:35" />
+    <tb_inbox id="7" user_from="4" user_to="3" content="私信测试 seven" inbox_type="1"
+              created="2018-02-18 21:51:35" updated="2018-02-18 21:51:35" />
+    <tb_inbox id="8" user_from="2" user_to="3" content="私信测试 eight" inbox_type="1"
+              created="2018-02-18 21:51:35" updated="2018-02-18 21:51:35" />
+    <tb_inbox id="9" user_from="2" user_to="1" content="私信测试 eight" inbox_type="1"
+              created="2018-02-18 21:51:35" updated="2018-02-18 21:51:35" />
+    <tb_inbox id="10" user_from="2" user_to="1" content="私信测试 eight" inbox_type="1"
+              created="2018-02-18 21:51:35" updated="2018-02-18 21:51:35" />
+    <tb_inbox id="11" user_from="2" user_to="1" content="私信测试 eight" inbox_type="1"
+              created="2018-02-18 21:51:35" updated="2018-02-18 21:51:35" />
+    <tb_inbox id="12" user_from="0" user_to="1" content="私信测试 eight" inbox_type="2"
+              created="2018-02-18 21:51:35" updated="2018-02-18 21:51:35" />
+</dataset>

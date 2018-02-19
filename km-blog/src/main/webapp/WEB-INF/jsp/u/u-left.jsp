@@ -7,7 +7,7 @@
     <div class="menu-box">
         <span class="menu-title">个人信息管理</span>
         <ul class="menu-list">
-            <li><a href="#">我的私信</a></li>
+            <li><a href="<%=basePath%>/u/${sessionScope.userBase.blogUrl}/admin/inbox">我的私信</a></li>
             <li><a href="#">修改个人资料</a></li>
             <li><a href="#">修改登录密码</a></li>
             <li><a href="#">空间个性化设置</a></li>

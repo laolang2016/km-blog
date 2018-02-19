@@ -35,7 +35,7 @@ public abstract class AbstractUserBaseMapperTest extends AbstractMapperTest{
         // 将测试数据插入到数据库中
         dataSet = createDataset("dbunitxml/tb_user_base.xml");
         DatabaseOperation.CLEAN_INSERT.execute(idconn,dataSet);
-        log.info("插入 tb_user 测试数据");
+        log.info("插入 tb_user_base 测试数据");
     }
 
     /**
